@@ -11,9 +11,13 @@ Installing Instructions:
 5 Open browser and type in address bar: http://127.0.0.1:8000/callbackform/ 
 
 For backend/administration page is used standard Django admin functionlity.
+
 Path for administration page is: http://127.0.0.1:8000/admin/callbackform/supportrequest/ 
-(user: admin pass: admin). Password is changeable.
+
+(user: admin pass: admin). Password is changeable
+.
 In administration page, administrators can see non-archived tickets by default, but they can change to see and archived.
 Tickets are sortable by DateTime fields by clicking on these columns captions.
+When you want to archive any ticket, mark "Archive" check box, and then click Save.
 
 

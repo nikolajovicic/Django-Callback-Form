@@ -1,0 +1,23 @@
+input[type=text], input[type=email], input[type=date], input[type=time], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+   }
+
+input:invalid {
+    border: 1px dashed red;
+}
+
+textarea:required{
+    border: 1px dashed red;
+}
+
+#container{
+    max-width: 500px;
+    margin: auto;
+}
+
+body{
+    background-color: lightblue;
+}

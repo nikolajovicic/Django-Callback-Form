@@ -1,4 +1,5 @@
 This application is written in Django framework
+
 Installing Instructions:
 
 1 Make sure you have installed Python

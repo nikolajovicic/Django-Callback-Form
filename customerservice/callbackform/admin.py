@@ -4,7 +4,7 @@ from django.contrib.admin import SimpleListFilter
 
 from .models import SupportRequest
 
-class ArchivedFilter(SimpleListFilter):
+class ArchivedFilter(SimpleListFilter): #to filter Archived = No by default, but leave user option to change
     title = _('Archived')
 
     parameter_name = 'archived'
@@ -39,12 +39,11 @@ class ArchivedFilter(SimpleListFilter):
 class SupportRequestAdmin(admin.ModelAdmin):
     fields = ('subject','sender_name','email','phone_number','problem_description','company_name','callback_date_time','comment','archived')
     list_display = ['pub_date','sender_name','subject','callback_date_time']
-    #list_editable = ['sender_name','subject','callback_date_time']
+
     sortable_by = ['pub_date','sender_name','subject','callback_date_time']
     list_filter = [ArchivedFilter]
     readonly_fields = ['subject','sender_name','email','phone_number','company_name','callback_date_time','pub_date','callback_date','callback_time','problem_description']
     
-
     def has_delete_permission(self, request, obj=None):
         return False
 

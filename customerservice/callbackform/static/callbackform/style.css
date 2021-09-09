@@ -1,4 +1,4 @@
-input[type=text], input[type=email], input[type=date], input[type=time], textarea {
+input[type=text], input[type=email], input[type=date], input[type=time], textarea, select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -16,7 +16,7 @@ textarea:required{
 #container{
     max-width: 500px;
     margin: auto;
-}
+} 
 
 body{
     background-color: lightblue;
